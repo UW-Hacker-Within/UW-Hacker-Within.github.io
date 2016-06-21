@@ -18,7 +18,13 @@
         <h1>UW-Madison THW</h1>
         <p></p>
 
-
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
         <p class="view"><a href="https://github.com/UW-Hacker-Within">View My GitHub Profile</a></p>
 
       </header>
